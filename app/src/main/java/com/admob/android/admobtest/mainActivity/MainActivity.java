@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements FinishingAnimatio
 
     private void loadRewardedVideoAd() {
         mRewardedVideoAd.loadAd("ca-app-pub-3940256099942544/5224354917",
-                new AdRequest.Builder().build());
+                new AdRequest.Builder().build()); // test s
     }
 
     private void initRealm() {
