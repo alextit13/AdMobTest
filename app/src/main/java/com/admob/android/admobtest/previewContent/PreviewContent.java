@@ -14,7 +14,14 @@ import com.admob.android.admobtest.database.RealmObjectDatabase;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.net.URI;
+import java.util.Arrays;
+
 import io.realm.Realm;
+import io.realm.RealmConfiguration;
 import io.realm.RealmResults;
 
 public class PreviewContent extends AppCompatActivity {
@@ -40,7 +47,12 @@ public class PreviewContent extends AppCompatActivity {
     }
 
     private void initRealm() {
-        realm = Realm.getDefaultInstance();
+        RealmConfiguration config = new RealmConfiguration.Builder()
+                .name(Realm.DEFAULT_REALM_NAME)
+                .assetFile("default.realm")
+                .schemaVersion(1)
+                .build();
+        realm = Realm.getInstance(config);
     }
 
     private void getDataIntent() {
