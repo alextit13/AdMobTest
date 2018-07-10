@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.admob.android.admobtest.previewContent.PreviewContent">
+    <ImageView
+        style="@style/StyleImageViewAlpha"
+        android:src="@drawable/second_screen_image"/>
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_1s"
+            style="@style/StyleCardViews">
+            <ImageView
+                android:id="@+id/iv_1p"
+                android:scaleType="fitXY"
+                android:src="@drawable/tony"
+                style="@style/StyleImageView"/>
+            <TextView
+                android:onClick="clickListeners"
+                style="@style/StyleTextViewCustom"
+                android:id="@+id/tv_1p"
+                android:text="@string/tony" />
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_2s"
+            style="@style/StyleCardViews"
+            android:layout_toEndOf="@id/cv_1s">
+            <ImageView
+                android:id="@+id/iv_2p"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vance"
+                style="@style/StyleImageView"/>
+            <TextView
+                android:id="@+id/tv_2p"
+                android:onClick="clickListeners"
+                android:text="@string/vance"
+                style="@style/StyleTextViewCustom" />
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_3s"
+            android:layout_below="@id/cv_1s"
+            style="@style/StyleCardViews">
+            <ImageView
+                android:id="@+id/iv_3p"
+                android:scaleType="centerCrop"
+                android:src="@drawable/adam"
+                style="@style/StyleImageView"/>
+            <TextView
+                android:id="@+id/tv_3p"
+                android:onClick="clickListeners"
+                android:text="@string/adam"
+                style="@style/StyleTextViewCustom" />
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_4s"
+            android:layout_below="@id/cv_2s"
+            android:layout_toEndOf="@id/cv_3s"
+            style="@style/StyleCardViews">
+            <ImageView
+                android:id="@+id/iv_4p"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ricardo"
+                style="@style/StyleImageView"/>
+            <TextView
+                android:id="@+id/tv_4p"
+                android:onClick="clickListeners"
+                android:text="@string/ricardo"
+                style="@style/StyleTextViewCustom" />
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

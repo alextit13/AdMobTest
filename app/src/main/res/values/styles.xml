@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="StyleCardViews" parent="CardView">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="cardElevation">10dp</item>
+    </style>
+    
+    <style name="StyleImageView" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="StyleImageViewAlpha" parent="StyleImageView">
+        <item name="android:alpha">0.2</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="StyleTextViewCustom" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+</resources>
