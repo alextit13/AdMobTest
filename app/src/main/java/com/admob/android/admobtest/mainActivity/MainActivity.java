@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements FinishingAnimatio
     }
 
     private void loadRewardedVideoAd() {
-        mRewardedVideoAd.loadAd(getResources().getString(R.string.RewardedVideo),
+        mRewardedVideoAd.loadAd(getResources().getString(R.string.RewardedVideoTEST),
                 new AdRequest.Builder().build()); // test s
     }
 

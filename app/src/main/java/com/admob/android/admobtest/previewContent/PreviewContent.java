@@ -42,7 +42,7 @@ public class PreviewContent extends AppCompatActivity {
 
     private void initAdMobInterstitia() {
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId(getResources().getString(R.string.BlockBetweenActivities));
+        mInterstitialAd.setAdUnitId(getResources().getString(R.string.BlockBetweenActivitiesTEST));
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
     }
 
