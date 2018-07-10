@@ -1,8 +1,8 @@
 package com.admob.android.admobtest.previewContent;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -35,7 +35,7 @@ public class PreviewContent extends AppCompatActivity {
 
     private void initAdMobInterstitia() {
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712"); // test s
+        mInterstitialAd.setAdUnitId(getResources().getString(R.string.BlockBetweenActivities));
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
     }
 
